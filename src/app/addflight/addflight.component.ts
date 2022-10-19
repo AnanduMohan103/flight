@@ -14,7 +14,7 @@ export class AddflightComponent implements OnInit {
   destination=""
   capacity=""
 
-  readvalue=()=>{
+  readValue=()=>{
     let data={
       "name":this.name,
       "origin":this.origin,
