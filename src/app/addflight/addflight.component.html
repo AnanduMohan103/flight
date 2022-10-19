@@ -9,7 +9,7 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="Origin">Origin</label>
-                    <input type="date" name="origin"[(ngModel)]="origin" id="" placeholder="dd-mm-yyyy" class="form-control">
+                    <input type="text" name="origin"[(ngModel)]="origin" id="" placeholder="dd-mm-yyyy" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="Destination">Destination</label>
@@ -20,7 +20,7 @@
                     <input type="Capacity" placeholder="Capacity" class="form-control" name="capacity"[(ngModel)]="capacity">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-info"(click)="readValue()">SUBMIT</button>
+                    <button class="btn btn-info" (click)="readValue()">SUBMIT</button>
                 </div>
             </div>
         </div>
