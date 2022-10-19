@@ -7,7 +7,19 @@ import { AddflightComponent } from './addflight/addflight.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewflightComponent } from './viewflight/viewflight.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes:Routes=[
+  {
+    path:"",component:NavbarComponent
+  },
+  {
+    path:"add",component:AddflightComponent
+  },
+  {
+    path:"view",component:ViewflightComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +30,7 @@ import { ViewflightComponent } from './viewflight/viewflight.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     FormsModule
   ],
   providers: [],
